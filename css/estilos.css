@@ -9,7 +9,7 @@ body {
 }
 
 .color_pp {
-    background-color: rgb(99, 139, 172);
+    background-color: rgb(243, 246, 248);
 }
 #siteHeader {
     background-color: rgb(35, 40, 41);
@@ -19,6 +19,13 @@ body {
     width: 100%;
     /* align-items: center;
     /* margin: 0 auto; */
+}
+
+@media (max-width: 767px) {
+    #siteHeader {
+        width: 100%;
+
+    }
 }
 
 #siteHeader .navbar {
@@ -53,7 +60,7 @@ body {
     color: white;
 }
 
-@media (max-width: 869px) {
+/* @media (max-width: 767px) {
     #siteHeader .menu ul li a {
         display: inline-block;
         margin: 0 4rem;
@@ -61,7 +68,7 @@ body {
         
 
     }
-}
+} */
 
 
 
@@ -72,7 +79,6 @@ body {
     background-position: 50% 50%;
     background-size: cover;
     width: 100%;
-    height: px;
     background-repeat: no-repeat;
     text-align: center;
     font-family: sans-serif;
@@ -83,6 +89,16 @@ body {
     font-size: 20px;
       
 }
+
+@media (max-width: 767px) {
+    .seccion1 {
+        display: grid;
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+
 
 .seccion1 .caja1 {
     display: flex;
@@ -102,6 +118,8 @@ body {
     box-shadow: 60px -16px rgb(146, 148, 156);
 }
 
+
+
 .seccion1 .caja1 div {
     display: flex;
     flex-direction: column;
@@ -109,11 +127,11 @@ body {
     padding-top: 40px;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .seccion1 .caja1 {
         margin: 0 auto;
     }
-}
+} */
 
 
 .cajas {
@@ -197,6 +215,7 @@ body {
     display: grid;
     grid-template-columns: 600px 600px;
     grid-template-rows:300px 300px;
+    width: 100%;
     /* margin: 70px auto; */
     justify-content:  center;
     /* justify-items: center; */
@@ -212,10 +231,13 @@ body {
         
     }
 }
-
+#grilla .ltizq1 {
+    display: flex;
+    justify-content: left;
+}
 
 #grilla .ltizq1 img {
-    justify-content: right;
+    
     width: 500px;
     height: 250px;
     transition: .2s;
@@ -229,7 +251,7 @@ body {
 
 #grilla .ltder1 {
    
-    text-align: right;
+    text-align: center;
     font-family: sans-serif;
     
 
@@ -237,16 +259,15 @@ body {
 
 
 #grilla .ltizq2 {
-    
-    text-align: left;
+  
+    text-align: center;
     font-family: sans-serif;
 }
 
 
 
 #grilla .ltder2 img {
-    position: relative;
-    left: 17%;
+    
     width: 500px;
     height: 250px;
     transition: .2s;
