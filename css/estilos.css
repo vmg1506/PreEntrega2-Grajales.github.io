@@ -15,7 +15,7 @@ body {
     background-color: rgb(35, 40, 41);
     display: flex;
     justify-content: left;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     /* align-items: center;
     /* margin: 0 auto; */
@@ -220,7 +220,7 @@ body {
     justify-content:  center;
     /* justify-items: center; */
     align-items:  center;
-    gap: 15px;
+   
    
 }
 
